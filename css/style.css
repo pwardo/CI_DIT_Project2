@@ -1,0 +1,360 @@
+/* Patrick Ward, D11124386 */
+/* DT249, Information Systems and Technology - Year 3 */
+
+/* Web Development */
+/* Assignment 2
+/* Lecturer: Colm O'Sullivan */
+
+/* Colour Scheme - 091D42, 396A92, 9AB4CB, ECEDF2, FDFDFD */
+
+/* Remove Default Formatting - This is a FULL reset taken from http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: #fff;
+    font-family: Georgia;
+    font-size: 12px;
+}
+
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+/*--------------- end of reset -------------------------- */
+
+
+/* html5 display rule - handles backwards compatibility with older browsers */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary{
+    display:block;
+}
+
+body{
+    background-color:#cccccc;
+    font-family: Georgia;
+    font-size: 12px;
+}
+a:hover {
+    color: #c00;
+}
+
+/* overall layout */
+#main_wrapper{
+    border: 1px solid black;
+    width: 1000px;
+    margin: 20px auto;
+    text-align: left;
+    background-color:#ffffff;
+    box-shadow: 10px 10px 10px #777;
+    -moz-border-radius: 10px;  
+    -webkit-border-radius: 10px;  
+}
+
+/* Main Header */
+#header-wrapper{
+    display: table-row;
+    text-shadow: 5px 5px 10px #777;
+    color: #0060AA;
+    width: 1000px;
+    height:60px;
+    border-bottom: 1px solid black;
+}
+
+#header{
+    display: table-column;
+    float: left;
+    background: #f1f1f1;    
+    background:-webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;	
+    text-shadow: 5px 5px 10px #777;
+    color: #0060AA;
+    width:380px;
+    height:50px;
+    -moz-border-radius-topleft: 10px;  
+    -webkit-border-top-left-radius: 10px;
+    border-bottom: 1px solid black;
+
+}
+
+#header a{
+    text-decoration:none;
+    color: #0060AA;	
+}
+#header a:hover {
+    color: #c00;
+}
+#header h2{
+    font-size: 14px;
+    margin:15px 0px 10px 10px;
+}
+
+#header_login{
+    display: table-column;
+    float: left;
+    background: #f1f1f1;    
+    background:-webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;	
+    text-shadow: 5px 5px 10px #777;
+    color: #0060AA;
+    width:980px;
+    height:50px;
+    -moz-border-radius-topleft: 10px;  
+    -moz-border-radius-topright: 10px;  
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+/* navigation bar */
+#nav {
+    display: table-column;        
+    height:50px;
+    float: right;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    list-style-type: none;
+    font-size: 13px;
+    width: 600px;
+    background: #f1f1f1;    
+    background:-webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+    
+    text-shadow: 5px 5px 10px #777;
+    color: #0060AA;
+    height:50px;
+    -moz-border-radius-topleft: 10px;  
+    -webkit-border-top-left-radius: 10px;
+    border-bottom: 1px solid black;    
+}
+
+#nav li {
+        float: right;
+        margin: 0;
+}
+#nav li a {
+        text-decoration: none;
+        display: block;
+        padding: 0 20px;
+        line-height: 40px;
+        color: #666;
+}
+#nav li a:hover, #menu li.active a {
+        background-color: #f5f5f5;
+        border-bottom: 2px solid #DDD;
+        color: #999;
+}
+
+
+
+
+/* Main Text Formatting */
+p
+{	
+    color: #0060AA;
+    font-family:Georgia, serif;
+    font-size: 13px;
+    line-height: 200%;
+    padding:5px;
+}
+.Bold 
+{
+    color: #0060AA;
+    font-family:Georgia, serif;
+    font-size: 12px;
+    line-height: 20px;
+    padding:5px;
+    font-weight: bold;
+}
+
+h1{
+    font:bold 20px Georgia;
+}
+h2{
+    font:bold 16px Georgia;
+}
+
+
+.Table 
+{
+    color: #0060AA;
+    border-spacing: 15px;
+    font-family:Georgia, serif;
+    font-size: 15px;
+/*    border: 1px solid black;   */
+    padding:5px;
+    width:100%;
+}
+
+.Table thead{
+    font-size: 20px;
+    border: 1px solid black;   
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+
+.Table tr {
+    border: 1px solid black;   
+
+}
+
+.Table td {
+    text-align: left;
+/*    border: 1px solid black;   */
+}
+
+/* main section */
+#content_wrapper{
+    float: left;
+    min-height:500px;
+    width: 1000px;
+    margin: 0px; /* total width is 720px leaving 280px */
+}
+
+#content_area{
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height:500px;
+    width: 700px;
+    margin: 0px; /* total width is 720px leaving 280px */
+}
+
+
+/* article formatting */
+article{
+    color: #0060AA;
+    background: white;
+    border-bottom: 1px solid #0060AA;
+    border-right: 1px solid #0060AA;
+
+    padding: 20px;
+    margin-bottom: 15px; /* seperation between atcles */
+    box-shadow: 5px 5px 10px #777;  
+
+    /* Background-size not implemented yet */  
+    -webkit-background-size: 100%;  
+    -o-background-size: 100%;  
+    -khtml-background-size: 100%;  
+  
+    /* Border-radius not implemented yet */  
+    -moz-border-radius: 22px;  
+    -webkit-border-radius: 22px;  
+    font-family: Georgia, serif;
+}
+
+article footer{
+    text-align: right;
+}
+
+aside{
+    color: #0060AA;
+    padding: 15px;
+
+    float:left;
+    width: 220px;
+    margin: 15px;
+    margin-left: 0px;
+    margin-top: 35px;
+    
+    background:#f1f1f1;
+    background:-webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+    box-shadow: 5px 5px 10px #777;  
+	
+    border-bottom: 1px solid #0060AA;
+    border-right: 1px solid #0060AA;
+
+    /* Background-size not implemented yet */  
+    -webkit-background-size: 100%;  
+    -o-background-size: 100%;  
+    -khtml-background-size: 100%;  
+  
+    /* Border-radius not implemented yet */  
+    -moz-border-radius: 22px;  
+    -webkit-border-radius: 22px;  
+}
+
+/* main footer */
+
+footer{  
+    display: table-cell;
+    border-top: 1px solid black;
+
+    width: 980px;
+    padding:20px;
+    text-shadow: 5px 5px 10px #777;
+
+    background:#f1f1f1;
+    background:-webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
+    -moz-border-radius-bottomleft: 10px;  
+    -moz-border-radius-bottomright: 10px;  
+    -webkit-border-bottom-right-radius: 10px;  
+
+    /* border: 1px solid black; */
+}
+
+
+#posted_date{
+    text-align: right;
+    font-weight: bold;
+}
+
+#my_pagination{
+    color:red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+ 
+#my_pagination a, #my_pagination strong{
+    padding: 5px 10px;
+    background-color: #e1e1e1;
+    
+}
+
+#my_pagination a:hover{
+    background-color: #999;
+}
+#my_pagination strong{
+    background-color: #EBF3EC;
+}
